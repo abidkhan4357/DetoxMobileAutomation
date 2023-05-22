@@ -34,17 +34,17 @@ module.exports = {
     }
   },
   apps: {
-    'ios.debug': {
-      binaryPath: "/Users/Ankit/Library/Developer/Xcode/DerivedData/Raven-echnisplcztxcgbcdichyefflysk/Build/Products/Debug-iphonesimulator/Raven.app",
-      build: "xcodebuild -workspace ios/Raven.xcworkspace -configuration debug -scheme Raven -sdk iphonesimulator -derivedDataPath -destination id=F809E87B-AAAD-48AD-8774-3FAED6E91D9A",
+    /* 'ios.debug': {
+      binaryPath: "/Users/rajeshnasit/Documents/my-demo-app-rn-main/-destination/Build/Products/Debug-iphonesimulator/MyRNDemoApp.app",
+      build: "xcodebuild -workspace ios/MyRNDemoApp.xcworkspace -configuration Debug -scheme MyRNDemoApp -sdk iphonesimulator -derivedDataPath -destination id=43EC5255-C8A8-473B-8E9E-A2CF4117B611",
       type: 'ios.app',
-    },
+    }, */
     'ios.release': {
-      binaryPath: "",
-      build: "",
+      binaryPath: "ipa/MyRNDemoApp.app",
+      build: "xcodebuild -workspace ios/MyRNDemoApp.xcworkspace -configuration Release -scheme MyRNDemoApp -sdk iphonesimulator -derivedDataPath ios/build -destination id=43EC5255-C8A8-473B-8E9E-A2CF4117B611",
       type: 'ios.app',
     },
-    'android.debug': {
+    /* 'android.debug': {
       type: 'android.apk',
       // /Users/Ankit/AndroidStudioProjects/Raven/app/build/intermediates/apk/debug/app-debug.apk
       binaryPath: 'android/app/build/outputs/apk/debug/app-debug.apk',
@@ -53,7 +53,7 @@ module.exports = {
       reversePorts: [
         8081
       ]
-    },
+    }, */
     'android.release': {
       type: 'android.apk',
       binaryPath: 'apk/app-release.apk',
@@ -68,7 +68,7 @@ module.exports = {
     simulator: {
       type: 'ios.simulator',
       device: {
-        type: 'iPhone 12'
+        type: 'iPhone 14'
       }
     },
     attached: {
