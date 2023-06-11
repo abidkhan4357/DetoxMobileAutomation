@@ -40,8 +40,8 @@ module.exports = {
       type: 'ios.app',
     }, */
     'ios.release': {
-      binaryPath: "ipa/MyRNDemoApp.app",
-      build: "xcodebuild -workspace ios/MyRNDemoApp.xcworkspace -configuration Release -scheme MyRNDemoApp -sdk iphonesimulator -derivedDataPath ios/build -destination id=43EC5255-C8A8-473B-8E9E-A2CF4117B611",
+      binaryPath: "ipa/guzel.app",
+      build: "xcodebuild -workspace ios/guzel.xcworkspace -configuration Release -scheme guzel -sdk iphonesimulator -derivedDataPath ios/build -destination id=43EC5255-C8A8-473B-8E9E-A2CF4117B611",
       type: 'ios.app',
     },
     /* 'android.debug': {
